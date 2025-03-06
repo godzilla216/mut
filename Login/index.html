@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madden Pack Opener</title>
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+<body>
+    <!-- Login/Sign Up Button -->
+<!-- Authentication Buttons -->
+<!-- Authentication Buttons -->
+<div id="authButtons">
+    <a href="signin.html" id="loginButton">Login / Sign Up</a>
+    <a href="account.html" id="accountButton" style="display: none;">Account Center</a>
+</div>
+    <div id="app">
+        <!-- Coin Display -->
+        <div id="coinDisplay">
+            <img src="Assets/coin_icon.png" alt="coin icon" id="coinIcon">
+            <span id="coinBalance">Coins: 10000</span>
+        </div>
+
+        <!-- Tabs -->
+        <div id="tabs">
+            <button id="openPackTab" class="active">Open Packs</button>
+            <button id="binderTab">Card Binder</button>
+        </div>
+
+        <!-- Open Pack Section -->
+        <div id="openPackSection">
+            <button id="openPackButton">Open Pack (1000 Coins)</button>
+            <div id="videoContainer">
+                <video id="packVideo" autoplay>
+                    <source src="Assets/pack.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>                
+            </div>
+            <div id="cardContainer">
+                <img id="cardImage" alt="Card Image">
+                <div id="cardTitle"></div>
+                <div id="cardDetails"></div>
+            </div>
+        </div>
+
+        <!-- Card Binder Section -->
+        <div id="binderSection" style="display: none;">
+            <h2>Your Card Binder</h2>
+            <div id="binderContainer"></div>
+        </div>
+    </div>
+
+    <script type="module" src="/public/js/script.js"></script>
+    <script src="/public/js/auth.js"></script>
+</body>
+</html>
